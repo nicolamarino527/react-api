@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div className='bg'>
-        <div className='product-list'>
+        <div>
           <PostList />
         </div>
       </div>

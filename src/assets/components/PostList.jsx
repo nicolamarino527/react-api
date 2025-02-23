@@ -30,8 +30,24 @@ export default function PostList() {
     useEffect(fetchPosts, [])
 
     return (
-        <div>
-
+        <div className='post-list'>
+            {posts.map((post) =>
+                <div className="card" key={post.id}>
+                    <img
+                        src={post.image}
+                        className="card-img-top"
+                        alt="Card image"
+                    />
+                    <div className="card-body">
+                        <h5 className="card-title">{post.title}</h5>
+                        <p className="card-text">{post.tags}</p>
+                        <p className="card-text"> {post.content}
+                        </p>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
+
+
