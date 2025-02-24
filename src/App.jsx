@@ -3,18 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
+import Header from './assets/components/Header'
 import PostList from './assets/components/PostList'
+import Form from './assets/components/Form'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className='bg'>
-        <div>
-          <PostList />
-        </div>
-      </div>
+      <Header />
+      <PostList />
+      <Form />
     </>
   )
 }

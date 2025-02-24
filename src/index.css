@@ -5,15 +5,22 @@
 
 }
 
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 .bg {
   background-color: rgb(236, 236, 236);
 }
 
-
 .card {
   width: 400px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 550px;
   cursor: pointer;
   overflow: hidden;
@@ -25,5 +32,16 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
 
+.new-post {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.form {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
